@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**************************************************
+                    Defaults
+**************************************************/
+
+html{
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#aad4cf;
+}
+
+.container{
+    width:1024px;
+    margin:0 auto 10px;
+    background:#d4e9e7;
+}
+
+
+/**************************************************
+                    Header
+**************************************************/
+header{
+    position:relative;
+}
+
+header img{
+    width:100%;
+}
+
+h1{
+    position:absolute;
+    width:100%;
+    top:60%;
+    text-align:center;
+    font-size:3.5rem;
+    color:white;
+}
+
+
+/**************************************************
+                    Nav
+**************************************************/
+nav ul{
+    text-align:center;
+}
+
+nav li{
+    /*
+    float:left;    
+    text-align:center;
+    width:33%;
+    */
+    display:inline-block;
+    width:32%;
+    border-right:1px solid #3d4342;
+    padding: 10px 0;
+}
+
+nav li:last-of-type{
+    border:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+
+/**************************************************
+                    Article
+**************************************************/
+
+main{
+    padding:0 10px;
+}
+
+h2{
+    font-size:2.2rem;
+    margin:2rem 0 1rem; /* three values: top, left-right, bottom */
+}
+
+section p{
+    line-height:1.5;
+}
+
+section img{
+    float:left;
+    margin:0 1rem 1rem 0; /* four values: top, right, bottom, left */
+    width:25%;
+}
+
+h3{
+    font-size:1.8rem;
+    margin:20px 0 1rem;
+}
+
+section ul{
+    list-style:disc;
+    margin-left:1.5rem;
+}
+
+
+/**************************************************
+                    Form
+**************************************************/
+.formbox{
+    border:1px solid black;
+    padding:2rem 1rem 1rem;
+    font-size:1.2rem;
+}
+
+.texts label, .texts input, .texts textarea{
+    display:block;
+    width:100%;
+    font-size:1.2rem; /* form elements do not inherit font-size, as they have a default set */
+}
+
+.texts label{
+    margin-bottom:10px;
+}
+
+.texts input{
+    margin-bottom:1.4rem;
+}
+
+.texts textarea{
+    height:6em;
+}
+
+h4{
+    font-size:1.5rem;
+    margin:1em 0;
+}
+
+.radios{
+    margin-bottom:1rem;
+}
+
+#submit{
+    background:rgba(0,0,0,0);
+    padding:12px;
+    font-size:12px;
+    border:1px solid black;
+}
+
+
+/**************************************************
+                    Footer
+**************************************************/
+
+footer{
+    text-align:right;
+    padding: 2rem;
+}
