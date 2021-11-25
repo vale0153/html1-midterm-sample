@@ -68,7 +68,7 @@ html{
                     Header
 **************************************************/
 header{
-    position:relative;
+    position:relative; /* elements with a position property will contain other elements with position absolute */
 }
 
 header img{
